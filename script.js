@@ -1,6 +1,5 @@
 
-var w,x,y,z;
-form = document.getElementById('form');
+var username,mail,password,re_password;
 username = document.getElementById('id1');
 mail = document.getElementById('id2');
 password = document.getElementById('id3');
