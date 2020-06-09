@@ -15,7 +15,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     width: 30%;
     padding: 10px;
-    height: 500px;
+    height: 600px;
     margin-top: 30px;
     
     
@@ -23,15 +23,26 @@ body {
 }
 
 
+.form {
+    padding: 20px 30px;
+}
+
+.Form {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+
   /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 80%;
     padding: 15px;
-    margin-top:2% ;
-    margin-bottom: 2% ;
+    margin-top:3% ;
+    margin-bottom: 3% ;
     margin-left: 30px;
     display: inline-block;
-    border: none;
+    border: 2px solid rgb(190, 190, 190);
     background: #f1f1f1;
     align-items: center;
     border-radius: 5px;
@@ -42,11 +53,11 @@ input[type=text], input[type=password] {
     outline: none;
   }
 
-  .s-btn {
+  .form button {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
-    margin-top: 20px;
+    margin-top: -20px;
     margin-left: 30px;
     margin-right: 8px;
     border: none;
@@ -57,11 +68,31 @@ input[type=text], input[type=password] {
     border-radius: 5px;
   }
 
+  .Form.error small {
+    visibility: visible;
+  }
+
+  .Form.error input {
+    border-color: red;
+  }
+
+  .Form.success input {
+    border-color:skyblue;
+  }
+
   
-  .s-btn:hover {
+  .form button:hover {
     opacity: 1;
   }
 
-  label {
+  .Form label {
     margin-left: 30px;
   }
+
+   .Form small {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    visibility: hidden;
+    
+}

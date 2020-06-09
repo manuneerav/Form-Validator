@@ -4,24 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form Validator</title>
-        <link rel="stylesheet" type="text/css" href="style.css"
+        <link rel="stylesheet" type="text/css" href="./style.css"
     </head>
     
     <body>
         <div class="container">
         <h1 style="margin-left: 120px;">Resgister</h1>
-        <form  method="POST">
+        <form  id="form" class="form">
+            
+            <div class="Form">
             <label for="username"><strong>Username</strong></label><br>
-            <input type="text" placeholder="Enter Username" id="id1" name="username" required><br>
+            <input type="text" placeholder="Enter Username" id="id1" name="username" required>
+            <small>Error Message</small>
+            </div>
+            
+            <div class="Form">
             <label for="mail"><strong>Email</strong></label><br>
-            <input type="text" placeholder="Enter Email" id="id2" name="mail" required><br>
+            <input type="text" placeholder="Enter Email" id="id2" name="mail" required>
+            <small>Error Message</small>
+            </div>
+            
+            <div class="Form">
             <label for="psw"><strong>Password</strong></label><br>
-            <input type="password" placeholder="Enter Password" id="id3" name="psw" required><br>
+            <input type="password" placeholder="Password" id="id4" name="psw" required>
+            <small>Error Message</small>
+            </div>
+            
+            <div class="Form">
             <label for="re-psw"><strong>Confirm Password</strong></label><br>
-            <input type="password" placeholder="Repeat Password" id="id4" name="re-psw" required><br>
-            <button type="submit" class="s-btn">Submit</button>
+            <input type="password" placeholder="Repeat Password" id="id4" name="re-psw" required>
+            <small>Error Message</small>
+            </div>
+            
+            
+            <button type="submit" >Submit</button>
+            
         </form>
         
         </div>
+    
+        <script src="./script.js"></script>
         
     </body>
